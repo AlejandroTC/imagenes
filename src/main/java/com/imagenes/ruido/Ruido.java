@@ -23,4 +23,33 @@ public class Ruido {
         }
         return  null;
     }
+    public static Image agregarRuidoSustractivo(Image original, double porcentaje){
+        BufferedImage bi = HerramientasImagen.toBufferedImage(original);
+        int cantidadPixeles = (int) ((porcentaje / 100) * (bi.getHeight() * bi.getWidth()));
+        Random ran = new Random();
+        int x, y;
+        for(int j = 0; j < cantidadPixeles; j++){
+            // Posición aleatoria dentro de la imagen
+            x = ran.nextInt(bi.getWidth());
+            y = ran.nextInt(bi.getHeight());
+            Color pixelColor = new Color(bi.getRGB(x, y));
+            int ruido = ran.nextInt(256); // Valor de ruido sustractivo
+            // Resta el ruido al valor de cada componente RGB
+            int nuevoRojo = Math.max(0, pixelColor.getRed() - ruido);
+            int nuevoVerde = Math.max(0, pixelColor.getGreen() - ruido);
+            int nuevoAzul = Math.max(0, pixelColor.getBlue() - ruido);
+            bi.setRGB(x, y, new Color(nuevoRojo, nuevoVerde, nuevoAzul).getRGB());
+        }
+        return original; // Devuelve la imagen con ruido sustractivo
+    }
+    
+    // ToDo: Agregar ruido mezclado (primero aditivo y luego sustractivo) a la imagen original con las intensidades especificadas
+    public static Image agregarRuidoMezclado(Image original, double porcentajeAditivo, double porcentajeSustractivo){
+        // Aplica primero el ruido aditivo
+        Image conRuidoAditivo = agregarRuidoAditivo(original, porcentajeAditivo);
+        // Aplica luego el ruido sustractivo sobre la imagen con ruido aditivo
+        Image conRuidoMezclado = agregarRuidoSustractivo(conRuidoAditivo, porcentajeSustractivo);
+        return conRuidoMezclado; // Devuelve la imagen con ruido mezclado
+    }
+    
 }
