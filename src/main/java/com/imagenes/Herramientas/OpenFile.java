@@ -18,7 +18,7 @@ public class OpenFile {
             FileNameExtensionFilter filtro =
                     new FileNameExtensionFilter("Imagenes","jpg","jpeg","png","bmp");
             JFileChooser selector = new JFileChooser();
-            File Folder = new File("/Users/atc/Documentos/Repos/ATC_7CM1/ImageAnalysis");
+            File Folder = new File("src\\TestImages");
             selector.setCurrentDirectory(Folder);
             selector.addChoosableFileFilter(filtro);
             selector.setFileSelectionMode(JFileChooser.FILES_ONLY);

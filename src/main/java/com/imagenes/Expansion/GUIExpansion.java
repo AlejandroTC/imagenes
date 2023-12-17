@@ -115,8 +115,4 @@ public class GUIExpansion extends JPanel {
             mostrarImagenExpandida((BufferedImage) imagenExpandida);
         }
     }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GUIExpansion().setVisible(true));
-    }
 }

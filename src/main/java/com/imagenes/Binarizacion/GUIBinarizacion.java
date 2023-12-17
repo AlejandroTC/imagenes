@@ -54,7 +54,7 @@ public class GUIBinarizacion extends JPanel {
 
         testImage.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
-            Image randomImage = OpenFile.abrirImagenAleatoria("/Users/atc/Documentos/Repos/ATC_7CM1/ImageAnalysis/Imágenes de prueba");
+            Image randomImage = OpenFile.abrirImagenAleatoria("src\\TestImages");
             // Haz algo con la imagen aleatoria, por ejemplo, mostrarla en un JLabel
             if (randomImage != null) {
                 createImages(randomImage);

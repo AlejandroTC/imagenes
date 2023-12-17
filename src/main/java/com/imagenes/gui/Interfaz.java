@@ -5,6 +5,7 @@ import javax.swing.JTabbedPane;
 
 import com.imagenes.binarizacion.GUIBinarizacion;
 import com.imagenes.expansion.GUIExpansion;
+import com.imagenes.ruido.GUIRuido;
 
 public class Interfaz {
     public static void run() {
@@ -31,7 +32,8 @@ public class Interfaz {
     JTabbedPane tabbedPane = new JTabbedPane();
     tabbedPane.addTab("Binarizacion", null, new GUIBinarizacion(), "Panel de Binarizacion");
     tabbedPane.addTab("Expansión", null, new GUIExpansion(), "Panel de Expansión");
-    
+    tabbedPane.addTab("Ruido", null, new GUIRuido(), "Panel de Ruido");
+
 
     //     // Panel de Botones - Imágenes
     //     JPanel panelImageButtons = new JPanel();
