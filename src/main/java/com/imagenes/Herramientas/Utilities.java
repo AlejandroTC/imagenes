@@ -1,4 +1,4 @@
-package com.imagenes.Herramientas;
+package com.imagenes.herramientas;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

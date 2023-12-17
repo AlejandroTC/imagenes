@@ -1,4 +1,4 @@
-package com.imagenes.Herramientas;
+package com.imagenes.herramientas;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;

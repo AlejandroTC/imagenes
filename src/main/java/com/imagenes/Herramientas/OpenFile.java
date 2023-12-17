@@ -1,4 +1,4 @@
-package com.imagenes.Herramientas;
+package com.imagenes.herramientas;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

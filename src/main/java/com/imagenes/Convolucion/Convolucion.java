@@ -1,10 +1,10 @@
-package com.imagenes.Convolucion;
+package com.imagenes.convolucion;
 
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 
-import com.imagenes.Herramientas.ImageSettings;
+import com.imagenes.herramientas.ImageSettings;
 
 /*
  * ToDo: tenemos que ddeterminar el divisior

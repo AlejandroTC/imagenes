@@ -1,9 +1,10 @@
-package com.imagenes.Expansion;
+package com.imagenes.expansion;
 
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import com.imagenes.Herramientas.ImageSettings;
+
+import com.imagenes.herramientas.ImageSettings;
 
 public class Expansion {
     public class ExpansionHistograma {

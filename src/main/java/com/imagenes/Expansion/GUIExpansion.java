@@ -1,9 +1,11 @@
-package com.imagenes.Expansion;
+package com.imagenes.expansion;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import com.imagenes.Herramientas.OpenFile;
+
+import com.imagenes.herramientas.OpenFile;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 

@@ -3,8 +3,8 @@ package com.imagenes.gui;
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 
-import com.imagenes.Binarizacion.GUIBinarizacion;
-import com.imagenes.Expansion.GUIExpansion;
+import com.imagenes.binarizacion.GUIBinarizacion;
+import com.imagenes.expansion.GUIExpansion;
 
 public class Interfaz {
     public static void run() {
@@ -29,8 +29,9 @@ public class Interfaz {
         
     // Agregar GUIExpansion como una pestaña
     JTabbedPane tabbedPane = new JTabbedPane();
-    tabbedPane.addTab("Expansión", null, new GUIExpansion(), "Panel de Expansión");
     tabbedPane.addTab("Binarizacion", null, new GUIBinarizacion(), "Panel de Binarizacion");
+    tabbedPane.addTab("Expansión", null, new GUIExpansion(), "Panel de Expansión");
+    
 
     //     // Panel de Botones - Imágenes
     //     JPanel panelImageButtons = new JPanel();

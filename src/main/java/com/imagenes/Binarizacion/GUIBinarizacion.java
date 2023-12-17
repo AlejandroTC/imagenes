@@ -1,4 +1,4 @@
-package com.imagenes.Binarizacion;
+package com.imagenes.binarizacion;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -15,10 +15,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import com.imagenes.Herramientas.Basicas;
-import com.imagenes.Herramientas.ImageSettings;
-import com.imagenes.Herramientas.OpenFile;
-import com.imagenes.Herramientas.Utilities;
+import com.imagenes.herramientas.Basicas;
+import com.imagenes.herramientas.ImageSettings;
+import com.imagenes.herramientas.OpenFile;
+import com.imagenes.herramientas.Utilities;
 
 public class GUIBinarizacion extends JPanel {
     private JTextField textFieldJ;

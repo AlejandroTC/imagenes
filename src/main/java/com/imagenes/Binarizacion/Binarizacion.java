@@ -1,9 +1,10 @@
-package com.imagenes.Binarizacion;
+package com.imagenes.binarizacion;
 
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import com.imagenes.Herramientas.ImageSettings;
+
+import com.imagenes.herramientas.ImageSettings;
 
 public class Binarizacion {
     public static Image binarizarImagen(Image original, int j){
