@@ -119,7 +119,7 @@ public class Basicas {
 
 
 
-    private static int validar (int i){
+    public static int validar (int i){
         if(i>255) return 255;
         if(i<0) return 0;
         return i;

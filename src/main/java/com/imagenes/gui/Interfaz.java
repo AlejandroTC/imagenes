@@ -4,7 +4,10 @@ import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 
 import com.imagenes.binarizacion.GUIBinarizacion;
+import com.imagenes.bordes.GUIBordes;
 import com.imagenes.expansion.GUIExpansion;
+import com.imagenes.frecuencia.GUIFrecuencia;
+import com.imagenes.repujado.GUIRepujado;
 import com.imagenes.ruido.GUIRuido;
 
 public class Interfaz {
@@ -33,6 +36,9 @@ public class Interfaz {
     tabbedPane.addTab("Binarizacion", null, new GUIBinarizacion(), "Panel de Binarizacion");
     tabbedPane.addTab("Expansión", null, new GUIExpansion(), "Panel de Expansión");
     tabbedPane.addTab("Ruido", null, new GUIRuido(), "Panel de Ruido");
+    tabbedPane.addTab("Bordes", null, new GUIBordes(), "Panel de Bordes");
+    tabbedPane.addTab("Efecto Repujado", null, new GUIRepujado(), "Panel de Efecto Repujado");
+    tabbedPane.addTab("Frecuencias FTT", null, new GUIFrecuencia(), "Panel de Frecuencias");
 
 
     //     // Panel de Botones - Imágenes
