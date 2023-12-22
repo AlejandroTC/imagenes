@@ -7,6 +7,7 @@ import com.imagenes.binarizacion.GUIBinarizacion;
 import com.imagenes.bordes.GUIBordes;
 import com.imagenes.expansion.GUIExpansion;
 import com.imagenes.frecuencia.GUIFrecuencia;
+import com.imagenes.morfologicas.GUIMorfologia;
 import com.imagenes.repujado.GUIRepujado;
 import com.imagenes.ruido.GUIRuido;
 
@@ -39,6 +40,7 @@ public class Interfaz {
     tabbedPane.addTab("Bordes", null, new GUIBordes(), "Panel de Bordes");
     tabbedPane.addTab("Efecto Repujado", null, new GUIRepujado(), "Panel de Efecto Repujado");
     tabbedPane.addTab("Frecuencias FTT", null, new GUIFrecuencia(), "Panel de Frecuencias");
+    tabbedPane.addTab("Morfología", null, new GUIMorfologia(), "Panel de Morfologia");
 
 
     //     // Panel de Botones - Imágenes
